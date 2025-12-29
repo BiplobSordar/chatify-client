@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@property --border-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: "<angle>";
+}
+
+/* Your custom classes */
+.input {
+  width: 100%;
+  background-color: rgb(30 41 59 / 0.5);
+  border: 1px solid #334155;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  color: #e2e8f0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.input::placeholder {
+  color: #94a3b8;
+}
+
+.input:focus {
+  outline: 2px solid #06b6d4;
+  outline-offset: 2px;
+  border-color: transparent;
+}
+
+.auth-input-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.auth-input-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+}
+
+.auth-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  background-color: rgb(6 182 212 / 0.2);
+  color: #67e8f9;
+}
+
+.auth-btn {
+  width: 100%;
+  background-color: #06b6d4;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.auth-btn:hover {
+  background-color: #0891b2;
+}
+
+.auth-btn:focus {
+  outline: 2px solid #06b6d4;
+  outline-offset: 2px;
+}
+
+.auth-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: rgb(6 182 212 / 0.1);
+  border-radius: 0.5rem;
+  color: #22d3ee;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  transition: color 0.15s ease-in-out;
+}
+
+.auth-link:hover {
+  color: #06b6d4;
+}
